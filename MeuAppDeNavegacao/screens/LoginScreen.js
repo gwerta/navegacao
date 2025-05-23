@@ -5,7 +5,7 @@ export default function LoginScreen({ navigation }) {
     const [usuario, setUsuario] = useState('');
     const [password, setPassword] = useState('');
 
-    const handleLogin = () => {
+    const checarLogin = () => {
         if (usuario === 'admin123' && password === '12345') {
             navigation.navigate('Home');
         } else {
@@ -32,7 +32,7 @@ export default function LoginScreen({ navigation }) {
                 onChangeText={setPassword}
                 secureTextEntry
             />
-            <TouchableOpacity style={styles.button} onPress={handleLogin}>
+            <TouchableOpacity style={styles.button} onPress={checarLogin}>
                 <Text style={styles.buttonText}>Entrar</Text>
             </TouchableOpacity>
         </View>
