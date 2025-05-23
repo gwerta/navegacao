@@ -8,15 +8,15 @@ export default function ProfileScreen({ navigation }) {
     <View style={styles.container}>
       <Text style={styles.title}>Profile Screen</Text>
       <View style={styles.buttonContainer}>
-        <Button
-          title="Go to Home"
-          onPress={() => navigation.navigate('Home')}
+        <Button color={"#2271b3"}
+          title="Go to Details"
+          onPress={() => navigation.navigate('Details')}
         />
       </View>
       <View style={styles.buttonContainer}>
-        <Button
-          title="Go to Details"
-          onPress={() => navigation.navigate('Details')}
+        <Button color={"#2271b3"}
+          title="Go Back"
+          onPress={() => navigation.goBack()}
         />
       </View>
     </View>
@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#fff',
+    backgroundColor: '#d8e9f3',
   },
   title: {
     fontSize: 24,
