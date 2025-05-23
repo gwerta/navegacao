@@ -8,13 +8,13 @@ export default function HomeScreen({ navigation }) {
     <View style={styles.container}>
       <Text style={styles.title}>Home Screen</Text>
       <View style={styles.buttonContainer}>
-      <Button
+      <Button color={"#440099"}
         title="Go to Details"
         onPress={() => navigation.navigate('Details')}
       />
       </View>
       <View style={styles.buttonContainer}>
-        <Button
+        <Button color={"#440099"}
         title="Go to Profile"
         onPress={() => navigation.navigate('Profile')}
         />
@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#fff',
+        backgroundColor: '#CCA9DD',
     },
     title: {
         fontSize: 24,

@@ -22,8 +22,7 @@ export default function LoginScreen({ navigation }) {
                 placeholder="Usuario"
                 value={usuario}
                 onChangeText={setUsuario}
-                keyboardType="usuario-address"
-                autoCapitalize="none"
+                autoCapitalize='none'
             />
             <TextInput
                 style={styles.input}
@@ -31,6 +30,7 @@ export default function LoginScreen({ navigation }) {
                 value={password}
                 onChangeText={setPassword}
                 secureTextEntry
+                autoCapitalize='none'
             />
             <TouchableOpacity style={styles.button} onPress={checarLogin}>
                 <Text style={styles.buttonText}>Entrar</Text>
@@ -44,35 +44,37 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#f5f5f5',
+        backgroundColor: '#e44f9c',
         padding: 20,
     },
     title: {
         fontSize: 24,
         fontWeight: 'bold',
+        color: '#000',
         marginBottom: 20,
     },
     input: {
         width: '100%',
         height: 50,
         borderColor: '#ccc',
-        borderWidth: 1,
+        borderWidth: 0,
         borderRadius: 8,
-        paddingHorizontal: 10,
-        marginBottom: 15,
-        backgroundColor: '#fff',
+        paddingHorizontal: 15,
+        marginBottom: 20,
+        backgroundColor: '#ff97d9',
     },
     button: {
-        width: '100%',
+        width: '50%',
         height: 50,
-        backgroundColor: '#007BFF',
+        backgroundColor: '#ff97d9',
         justifyContent: 'center',
         alignItems: 'center',
         borderRadius: 8,
+        marginTop: 10,
     },
     buttonText: {
-        color: '#fff',
+        color: '#000',
         fontSize: 16,
-        fontWeight: 'bold',
+   
     },
 });

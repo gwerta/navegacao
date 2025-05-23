@@ -8,15 +8,21 @@ export default function DetailsScreen({ navigation }) {
     <View style={styles.container}>
       <Text style={styles.title}>Details Screen</Text>
       <View style={styles.buttonContainer}>
-        <Button
+        <Button color={'#008000'}
           title="Go to Home"
           onPress={() => navigation.navigate('Home')}
         />
       </View>
       <View style={styles.buttonContainer}>
-        <Button
+        <Button color={'#008000'}
           title="Go to Profile"
           onPress={() => navigation.navigate('Profile')}
+        />
+      </View>
+      <View style={styles.buttonContainer}>
+        <Button color={"#008000"}
+          title="Go Back"
+          onPress={() => navigation.goBack()}
         />
       </View>
     </View>
@@ -28,7 +34,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#fff',
+    backgroundColor: '#90ee90',
   },
   title: {
     fontSize: 24,
