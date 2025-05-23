@@ -6,7 +6,7 @@ const windowWidth = Dimensions.get('window').width;
 export default function HomeScreen({ navigation }) {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Home Screen</Text>
+      <Text style={styles.title}>Home</Text>
       <View style={styles.buttonContainer}>
       <Button color={"#440099"}
         title="Go to Details"

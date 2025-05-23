@@ -6,7 +6,7 @@ const windowWidth = Dimensions.get('window').width;
 export default function ProfileScreen({ navigation }) {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Profile Screen</Text>
+      <Text style={styles.title}>Profile</Text>
       <View style={styles.buttonContainer}>
         <Button color={"#2271b3"}
           title="Go to Details"
