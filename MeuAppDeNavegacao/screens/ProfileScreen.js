@@ -5,18 +5,15 @@ const windowWidth = Dimensions.get('window').width;
 
 export default function ProfileScreen({ navigation }) {
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Profile Screen</Text>
+    <View style={styles.buttonContainer}>
+      <Button
+        title="Go to Details"
+        onPress={() => navigation.navigate('Details')}
+      />
       <View style={styles.buttonContainer}>
         <Button
-          title="Go to Home"
-          onPress={() => navigation.navigate('Home')}
-        />
-      </View>
-      <View style={styles.buttonContainer}>
-        <Button
-          title="Go to Details"
-          onPress={() => navigation.navigate('Details')}
+          title="Go Back"
+          onPress={() => navigation.goBack()}
         />
       </View>
     </View>
@@ -38,7 +35,7 @@ const styles = StyleSheet.create({
   buttonContainer: {
     backgroundColor: '#f0f0f0',
     margin: 10,
-    width: windowWidth * 0.5,
+    width: windowWidth * 0.2,
     borderRadius: 10,
   },
 });
